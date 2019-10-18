@@ -1,0 +1,223 @@
+<?php
+/*
+<div class="col-md-12  divBottomMargin" >  //render模板(md,lg)
+                <div class="col-md-3 ABlank shadowbloack" >
+                    <p><img src="img/20199722112473350.jpg" class="img-fluid img-thumbnail col-md-12 userimglLimit divBottomMargin" alt="Responsive image">
+                    <div class=" col-md-12">
+                        <h4>username</h4>
+                    </div>
+                    <div class=" col-md-12">
+                        <h4>發文時間:post_time</h4>
+                    </div>
+                    <div class=" col-md-12">
+                        <h4>上限狀態:onlinestate</h4>
+                    </div>
+                </div>
+                <div class="col-md-9 ABlank shadowbloack" >
+                    <div class="col-md-12">
+                        <h2 class="underLine">title</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <h5 >content</h5>
+                    </div>
+                </div>
+            </div>
+
+<div class="col-xs-12 ABlank shadowbloack divBottomMargin" > //render模板(xs,sm)
+                <div class="col-xs-12 ">
+                    <img src="img/20199722112473350.jpg" class="same col-xs-4 img-fluid img-thumbnail userimglLimit divBottomMargin" alt="Responsive image">
+                    <div class="same col-xs-8">
+                        <div class=" col-md-12">
+                            <h3>username</h3>
+                        </div>
+                        <div class=" col-md-12">
+                            <h3>發文時間:post_time</h3>
+                        </div>
+                        <div class=" col-md-12">
+                            <h3>上限狀態:onlinestate</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 underLine" >
+                    <h5 >title</h5>
+                </div>
+                <div class="col-xs-12 " >
+                    <h5 >content</h5>
+                </div>
+            </div>
+ */
+?>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+</head>
+<body style="background:#FFFFFF ">
+<style>
+    .ABlank {
+        background:#F5FFFA;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 12px ;
+        padding-bottom: 12px ;
+        margin-left:auto;
+        margin-right:auto;
+        border-top: 2px solid #0DBF8C;
+        border-bottom: 2px solid #0DBF8C;
+    }
+    .divBottomMargin
+    {
+        margin-bottom:20px;
+    }
+    .imglLimit
+    {
+        max-width: 400px;
+        min-width: 200px;
+    }
+    .userimglLimit
+    {
+        max-width: 200px;
+        max-height: 400px;
+    }
+    .shadowbloack
+    {
+        box-shadow: 0px 5px 10px #DBE4E8;
+    }
+    .underLine
+    {
+        border-bottom: 1px solid #888;
+    }
+    .same{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+        width: 40%;
+        border: 1px solid #888;
+    }
+</style>
+<nav class="container-fluid" >
+    <div class="row">
+        <div class="col-md-12" id="t1" style="background:#20B2AA ;height:80px ;">
+            <div class="col-md-3 col-lg-2 col-xs-3 col-sm-3" style="margin-top: 10px">
+                <img src="img/1.png" style="height:50px">
+            </div>
+            <div class="col-md-9 col-lg-9 col-xs-9 col-sm-9">
+                <div class="input-group" style="margin-top: 20px">
+                    <input type="text" class="form-control" placeholder="全站搜尋">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="" id="t2" style="background:#33E6CC">
+            <div class="dropdown ">
+                <button class="btn btn-success dropdown-toggle col-md-2" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span id="state" class="glyphicon glyphicon-user" aria-hidden="true">會員狀態:登入</span>
+                    <span class="caret"></span>
+                </button>
+                <div class="col-md-2">
+                </div>
+                <ul id="user_dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li role="separator" class="divider"></li>
+                    <li id="membercenter"><a href="">會員中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid" >
+    <div class="row">
+        <div class="hidden-lg hidden-md col-xs-12 col-sm-12 ABlank" id="totalA_xs" style="margin-bottom: 30px; box-shadow: 0px 5px 10px #DBE4E8; background: #ffffff">
+        </div>
+
+        <div class="col-md-9 col-lg-9 hidden-xs hidden-sm" id="totalA_md" style=" margin-top:20px; margin-bottom:40px;">
+        </div>
+
+        <div class="col-md-3 row same col-offset-2.5" id="totalB" style="background:#FFFFFF; margin-top:20px;">
+            <div class="col-md-12 col-xs-6 imglLimit" id="C1" >
+                <p><img src="img/Ad4.gif" class="img-fluid img-thumbnail " alt="Responsive image">
+            </div>
+            <div class="col-md-12 col-xs-6 imglLimit" id="C2" >
+                <p><img src="img/Ad1.jpg" class="img-fluid img-thumbnail " alt="Responsive image">
+            </div>
+            <div class="col-md-12 col-xs-6 imglLimit" id="C3" >
+                <p><img src="img/Ad2.jpg" class="img-fluid img-thumbnail " alt="Responsive image">
+            </div>
+            <div class="col-md-12 col-xs-6 imglLimit" id="C4" >
+                <p><img src="img/Ad4.gif" class="img-fluid img-thumbnail " alt="Responsive image">
+            </div>
+            <div class="col-md-12 col-xs-6 imglLimit" id="C5" >
+                <p><img src="img/Ad4.gif" class="img-fluid img-thumbnail " alt="Responsive image">
+            </div>
+            <div class="col-md-12 col-xs-6 imglLimit" id="C6" >
+                <p><img src="img/Ad4.gif" class="img-fluid img-thumbnail " alt="Responsive image">
+            </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+<div class="container modal fade" id="loginwindow" tabindex="-1">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+        </div>
+        <div class="modal-body">
+            <form method="post" >
+                帳號：<input id="login_account" type="text" class="form-control " placeholder="account">
+                密碼：<input id="login_password" type="password" class="form-control " placeholder="password">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#signupwindow">
+                註冊
+            </button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_login">
+                登入
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container modal fade" id="signupwindow" tabindex="-1">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+        </div>
+        <div class="modal-body">
+            <form method="post" >
+                帳號：<input id="signup_account" type="text" class="form-control " placeholder="account">
+                密碼：<input id="signup_password" type="password" class="form-control " placeholder="password">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+                關閉
+            </button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_signup">
+                註冊
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="EventAPI.js"></script>
+<script src="articleAPI.js"></script>
