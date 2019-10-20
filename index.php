@@ -77,17 +77,52 @@
     </div>
 </nav>
 <div class="container-fluid" >
-    <div class="row">
-        <div id="md-list-area" class="hidden-lg hidden-md col-xs-12 col-sm-12 ABlank" style="margin-bottom: 30px; box-shadow: 0px 5px 10px #DBE4E8">
-
-        </div>
-
-        <div class="col-md-9 col-v lg-9 hidden-xs hidden-sm" id="totalA" style=" margin-top:20px; margin-bottom:40px;">
-            <div class="col-md-12 ABlank" style="box-shadow: 0px 5px 10px #DBE4E8">
+    <div class="row" id="content1">
+        <div id="md-list-area" class="hidden-lg hidden-md col-xs-12 col-sm-12 ABlank" style="margin-bottom: 30px; box-shadow: 0px 5px 10px #DBE4E8"><script>//內容模板窄型</script>
+            <div class="same" >
+                <div class="col-md-2 col-lg-2">
+                <h4>
+                    <a href="http://localhost/article.php?id=1"> title </a>
+                </h4>
+                </div>
+                <img src="img/Ad2.jpg" class="img-fluid img-thumbnail imglLimit col-md-2 col-lg-2" alt="Responsive image">
+                <div class="col-md-8 col-lg-8">
+                    <h3>title</h3>
+                    <p>
+                        article_without_tags
+                    </p>
+                </div>
             </div>
-
         </div>
-        <div class="col-md-3 row same col-offset-2.5" id="totalB" style="background:#FFFFFF; margin-top:20px;">
+    </div>
+        <div class="col-md-9 col-v lg-9 hidden-xs hidden-sm" id="totalA" style=" margin-top:20px; margin-bottom:40px;"><script>//內容模板寬型</script>
+                <div class="col-md-12 ABlank" style="box-shadow: 0px 5px 10px #DBE4E8">
+                    <div class="same" >
+                        <div class="col-md-2 col-lg-2">
+                            <h4>
+                                <a href="http://localhost/article.php?id=1"> title </a>
+                            </h4>
+                        </div>
+                        <img src="img/Ad2.jpg" class="img-fluid img-thumbnail imglLimit col-md-2 col-lg-2" alt="Responsive image">
+                        <div class="col-md-8 col-lg-8">
+                            <h3>title</h3>
+                            <p>
+                                article_without_tags
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <script>
+            /*
+            <div class="col-md-9 col-v lg-9 hidden-xs hidden-sm" id="totalA" style=" margin-top:20px; margin-bottom:40px;">
+                 <div class="col-md-12 ABlank" style="box-shadow: 0px 5px 10px #DBE4E8">
+                 </div>
+            </div>
+            */
+        </script>
+        <div class="col-md-3 row same col-offset-2.5" id="totalB" style="background:#FFFFFF; margin-top:20px;"><script>//廣告模板</script>
             <div class="col-md-12 col-xs-6 " id="C1" >
                 <p><img src="img/Ad4.gif" class="img-fluid img-thumbnail" alt="Responsive image">
             </div>
@@ -154,6 +189,15 @@
             </button>
         </div>
     </div>
+</div>
+<div id="content">
+    result: {{result}} <br>
+    array: {{array}} <br>
+    page: {{page}} <br>
+    allListCount: {{allListCount}} <br>
+    state: {{state}}<br>
+    <test>
+    </test>
 </div>
 </body>
 </html>
