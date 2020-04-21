@@ -1,4 +1,7 @@
 <?php
+
+use http\Message;
+
 include('connect.php');
 session_start();
 function getAllListCount($db)
@@ -42,7 +45,7 @@ function getIndexData($db)
                 "allListCount" => getAllListCount($db),
                 "page" => gstPageNum($db),
                 "account" => $account,
-                "state" => $state,
+                "loginstate" => $state,
                 "data" => $Data
             ]);
             echo $JsonString;
@@ -287,22 +290,19 @@ function replyfuc($db)
     }
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    if($_GET['request']==="index")
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $keyword = json_decode(file_get_contents("php://input"),true);
+    if($keyword['type'] ==="index")
     {
-        $DataType = $_GET['Type'];
-        $PageNum = $_GET['Num'];
-        $PageSize = $_GET['PageSize'];
         getIndexData($conn);
     }
-    if($_GET['request']==="article")
+    if($keyword['type'] ==="article")
     {
         getArticleData($conn);
     }
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if($_POST['request']==="login")
+    if($keyword['type'] ==="login")
     {
         if(isset($_POST['account'])){
             if(isset($_POST['password'])){
@@ -318,7 +318,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo information_missing();
         }
     }
-    if($_POST['request']==="signup")
+    if($keyword['type'] ==="signup")
     {
         if(isset($_POST['account'])){
             if(isset($_POST['password'])){
@@ -334,15 +334,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo information_missing();
         }
     }
-    if($_POST['request']==="logout")
+    if($keyword['type'] ==="logout")
     {
         echo logoutfuc();
     }
-    if($_POST['request']==="post")
+    if($keyword['type'] ==="post")
     {
         echo postfuc($conn);
     }
-    if($_POST['request']==="reply")
+    if($keyword['type'] ==="reply")
     {
         echo replyfuc($conn);
     }

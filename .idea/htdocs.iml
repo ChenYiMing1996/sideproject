@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/phpMyAdmin/setup/lib" isTestSource="false" packagePrefix="PhpMyAdmin\Setup\" />
       <sourceFolder url="file://$MODULE_DIR$/phpMyAdmin/test/classes" isTestSource="true" packagePrefix="PhpMyAdmin\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/phpMyAdmin/test/selenium" isTestSource="true" packagePrefix="PhpMyAdmin\Tests\Selenium\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/phpMyAdmin/libraries/classes" isTestSource="false" packagePrefix="PhpMyAdmin\" />
       <excludeFolder url="file://$MODULE_DIR$/phpMyAdmin/vendor/bacon/bacon-qr-code" />
       <excludeFolder url="file://$MODULE_DIR$/phpMyAdmin/vendor/composer" />

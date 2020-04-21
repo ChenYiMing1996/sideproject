@@ -7,6 +7,7 @@ $(document).ready(function() {
     var DataType ="Json";//資料Type
     var DataNum = $.urlParam('page');//當前頁碼
     var DatePageSize = 6;//文章最大數
+    var testurl = "https://en.wikipedia.org/wiki/Open_API";
     var myurl = "indexAPI.php?Type=" + DataType + "&Num=" + DataNum + "&PageSize=" + DatePageSize;
     Vue.component(
         'test',

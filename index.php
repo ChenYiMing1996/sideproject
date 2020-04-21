@@ -5,6 +5,7 @@
     <script src="jquery-3.4.1.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
 </head>
 <body style="background:#FFFFFF ">
@@ -19,10 +20,6 @@
         margin-right:auto;
         border-top: 2px solid #0DBF8C;
         border-bottom: 2px solid #0DBF8C;
-    }
-    .mobileAdHeight
-    {
-        height: auto;
     }
     .same{
         display: -webkit-box;
@@ -43,6 +40,10 @@
     .imglLimit
     {
         max-width: 600px;
+    }
+    .test
+    {
+        box-sizing: border-box;
     }
 </style>
 <nav class="container-fluid" >
@@ -113,15 +114,6 @@
                     </div>
                 </div>
         </div>
-
-        <script>
-            /*
-            <div class="col-md-9 col-v lg-9 hidden-xs hidden-sm" id="totalA" style=" margin-top:20px; margin-bottom:40px;">
-                 <div class="col-md-12 ABlank" style="box-shadow: 0px 5px 10px #DBE4E8">
-                 </div>
-            </div>
-            */
-        </script>
         <div class="col-md-3 row same col-offset-2.5" id="totalB" style="background:#FFFFFF; margin-top:20px;"><script>//廣告模板</script>
             <div class="col-md-12 col-xs-6 " id="C1" >
                 <p><img src="img/Ad4.gif" class="img-fluid img-thumbnail" alt="Responsive image">
@@ -191,16 +183,11 @@
     </div>
 </div>
 <div id="content">
-    result: {{result}} <br>
-    array: {{array}} <br>
-    page: {{page}} <br>
-    allListCount: {{allListCount}} <br>
-    state: {{state}}<br>
-    <test>
-    </test>
+    <renderContent>
+    </renderContent>
 </div>
 </body>
 </html>
 
-<script src="indexAPI.js"></script>
+<script src="index_API.js"></script>
 <script src="EventAPI.js"></script>
