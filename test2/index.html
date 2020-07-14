@@ -1,0 +1,99 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />  <!-- Load Leaflet from CDN -->
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.dragsort.js"></script>
+<!-- <style type="text/css">
+    .sample {
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+    padding-top: 20px;
+    margin-top:20px;
+    }
+    ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    }
+    #list1, #list2 {
+    width: 350px;
+    list-style: none;
+    margin: 0;
+    }
+    #list1 li, #list2 li {
+    float: left;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    }
+    #list1 li div, #list2 li div {
+    width: 90px;
+    height: 50px;
+    border: solid 1px black;
+    background-color: #E0E0E0;
+    text-align: center;
+    padding-top: 40px;
+    }
+    #list2 {
+    float: right;
+    }
+    .placeHolder div {
+    background-color: white !important;
+    border: dashed 1px gray !important;
+    }
+</style> -->
+<script type="text/javascript">
+ $(function(){
+    $("ul:first").dragsort({
+        dragSelector: "div",
+        dragEnd: function(){
+            console.log("dragEnd")
+        },
+        dragBetween: function(){
+            console.log("dragBetween")
+        }
+    });
+ });
+</script>
+ 
+<body>
+ <div class="sample">
+  <h2>簡單的拖移排序</h2>
+ 
+  <ul>
+   <div>bread</div>
+   <div>vegetables</div>
+   <div>meat</div>
+   <div>milk</div>
+   <div>butter</div>
+   <div>ice cream</div>
+  </ul>
+ 
+  <br/>
+  <h2>兩組 ul 中的 li 元素都能互相拖移插入</h2>
+ 
+  <ul id="list2">
+   <li><div>10</div></li>
+   <li><div>11</div></li>
+   <li><div>12</div></li>
+   <li><div>13</div></li>
+   <li><div>14</div></li>
+   <li><div>15</div></li>
+   <li><div>16</div></li>
+   <li><div>17</div></li>
+   <li><div>18</div></li>
+  </ul>
+ 
+  <ul id="list1">
+   <li><div>1</div></li>
+   <li><div>2</div></li>
+   <li><div>3</div></li>
+   <li><div>4</div></li>
+   <li><div>5</div></li>
+   <li><div>6</div></li>
+   <li><div>7</div></li>
+   <li><div>8</div></li>
+   <li><div>9</div></li>
+  </ul>
+ </div>
+</body>

@@ -1,0 +1,96 @@
+<!-- <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <script type="text/javascript" src="js/leaflet.js"></script>
+        <script type="text/javascript" src="js/Esri.js"></script>
+        <link rel="stylesheet" href="css/mapbox-gl.css">
+        <script type="text/javascript" src="js/mapbox-gl.js"></script>
+        <script type="text/javascript" src="js/esri-leaflet-debug.js"></script>
+        <!-------------------- ship input ---------------------------------->
+		<!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="https:/resources/demos/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+		<link rel="stylesheet" href="http://www.npeihl.com/leaflet-sidebar-v2/css/leaflet-sidebar.css" />
+		<link rel="stylesheet" href="css/leaflet-sidebar.over.css" /> -->
+		<!-- <link rel="stylesheet" href="ship/css/style.css">即時互動css
+		<link rel="stylesheet" href="ship/css/aqi.css">即時互動css
+		<link href="ship/css/select2.min.css" rel="stylesheet" />
+        <script src="ship/js/hamasen.js"></script>即時互動js
+        <script src="ship/js/select2.min.js"></script> -->
+	    <!-------------------- ship input ---------------------------------->
+    <!-- </head>
+    <body>
+        <div id="map"></div>
+            <div id="basemaps-wrapper" class="leaflet-bar">
+            <select id="basemaps">
+                <option value="OpenStreetMap">OpenStreetMap</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Topographic">Topographic</option>
+                <option value="Navigation">Navigation</option>
+                <option value="Streets">Streets</option>
+                <option value="StreetsNight">Streets Night</option>
+                <option value="StreetsRelief">Streets Relief</option>
+            </select>
+        </div>
+        <script type="text/javascript" src="js/mapInit.js"></script>
+    </body>
+</html> -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />  <!-- Load Leaflet from CDN -->
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="dist/css/timeline.min.css">
+    <link rel="stylesheet" href="css/mapbox-gl.css">
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/Esri.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+    <script src="https://unpkg.com/gcoord/dist/gcoord.js"></script>
+    <script type="text/javascript" src="js/mapbox-gl.js"></script>
+    <script type="text/javascript" src="js/esri-leaflet-debug.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="dist/js/timeline.min.js"></script>
+    <script type="text/javascript" src="js/leaflet.timeline.js"></script>
+    <script type="text/javascript" src="js/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="map"></div>
+    <div id="basemaps-day" class="leaflet-bar">
+        <div style="margin-bottom: 10px;">
+            過去軌跡天數
+        </div>
+        <select id="day" >
+            <option value="-1">1天</option>
+            <option value="-3">3天</option>
+            <option value="-7">7天</option>
+            <option value="-30">30天</option>
+            <option value="-60">60天</option>
+            <option value="-90" selected="selected">90天</option>
+        </select>
+    </div>
+    <div id="basemaps-group" class="leaflet-bar">
+        <div style="margin-bottom: 10px;">
+            船隊列表
+        </div>
+        <select id="group" >
+            <option value="v-for_Data">v-for_Data</option>
+            <option value="v-for_Data">v-for_Data</option>
+            <option value="v-for_Data">v-for_Data</option>
+        </select>
+    </div>
+    <script type="text/javascript" src="js/mapInit.js"></script>
+    <script type="text/javascript" src="js/getdata.js"></script>
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+</body>
+</html>

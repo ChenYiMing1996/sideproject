@@ -1,0 +1,85 @@
+.leaflet-tooltip.ioc-tooltip-aqi{
+	border: 2px solid rgb(60, 60, 60);
+	border-radius: 10px;
+	opacity: 1 !important;
+	width: 220px;
+}
+.ioc-epa-box{
+	text-shadow: 1px 1px 1px #333;
+}
+.ioc-tooltip-aqi{
+	border: 2px solid rgb(60, 60, 60);
+	 border-radius: 10px;
+	 opacity: 1;
+	 width: 220px;
+   }
+.ioc-epa-address_title {
+	width: 50%;
+	display: inline-block;
+	font-size: 2.5em;
+	font-weight: 900;
+
+}
+.ioc-epa-publishtime{
+	width: 50%;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 900;
+}
+
+.ioc-epa-text{
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 600;
+	color: #fff;
+}
+
+.ioc-epa-status-title .ioc-epa-text{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.ioc-epa-text-long{
+	white-space: pre-line;
+	font-size: 15px;
+	line-height: 17px;
+	padding-top: 4px;
+	padding: 4px 13px 0;
+}
+
+.ioc-epa-text.line{
+	border-right: 1px solid #fff;
+}
+
+.ioc-tooltip-box table{
+	width: 100%;
+}
+.ioc-tooltip-box table td{
+	padding: 1px;
+}
+.aqiBox .aqiBoxList table th, .aqiBox .aqiBoxList table td {
+	border-bottom: 1px solid #ccc;
+}
+
+.aqiBox .aqiBoxList .PAQIO3 {
+	font-size: 10pt;
+	font-weight: bold;
+	width: 42%;
+	line-height: 18px;
+	text-align: center;
+	padding: 4px 0;
+}
+.aqiBox .aqiBoxList .num{
+	font-size: 12pt;
+	white-space: nowrap;
+	font-weight: bold;
+	text-align: right;
+}
+.aqiBox .aqiBoxList .PAQIO3 sub {
+	font-size: 10px;
+	line-height: 0;
+	position: relative;
+	bottom: -0.25em;
+}

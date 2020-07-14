@@ -1,0 +1,116 @@
+#ioc-device-sidebar{
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    border-width: 0;
+    border-radius: 0;
+    -webkit-box-shadow: -3px 0px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: -3px 0px 2px rgba(0, 0, 0, 0.4);
+}
+#ioc-device-sidebar .leaflet-sidebar-title{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#ioc-device-sidebar .leaflet-sidebar-header{
+    height: 63px;
+    font-size: 27px;
+    line-height: 63px;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin: 0;
+}
+#ioc-device-sidebar #leaflet-sidebar-wiki .leaflet-sidebar-header{
+    background-color: #454545;
+}
+
+#ioc-device-sidebar .leaflet-sidebar-close{
+    height: 63px
+}
+#ioc-device-sidebar .leaflet-sidebar-close:hover {
+    background-color: #5198d6;
+}
+#ioc-device-sidebar #leaflet-sidebar-wiki .leaflet-sidebar-close:hover {
+    background-color: #555;
+}
+#ioc-device-sidebar .leaflet-sidebar-header .star {
+    display: inline-block;
+    float: right;
+    margin-right: 0;
+    color: #FBE434;
+    height: 100%;
+    line-height: 62px;
+}
+#ioc-device-sidebar .leaflet-sidebar-pane{
+    width: initial;
+    padding: 0;
+}
+
+#ioc-device-sidebar .hama-status{
+    background-color: #D24556;
+    margin: 0;
+    padding: 6px 20px 9px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#ioc-device-sidebar h3.normal{
+    background: #27AF83;
+}
+
+/* 框架長度 340  (加回原本 right:40 的部分) */
+@media (min-width: 768px) and (max-width: 991px) {
+.leaflet-sidebar {
+  width: 340px;
+  max-width: 340px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+.leaflet-sidebar {
+  width: 340px;
+  max-width: 340px; } }
+@media (min-width: 1200px) {
+.leaflet-sidebar {
+  width: 340px;
+  max-width: 340px; } }
+
+
+/* 內容長度 300 */
+@media (min-width: 768px) and (max-width: 991px) {
+    .leaflet-sidebar-pane {
+        min-width: 300px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+    .leaflet-sidebar-pane {
+        min-width: 300px; } }
+@media (min-width: 1200px) {
+        .leaflet-sidebar-pane {
+        min-width: 300px; } }
+
+#ioc-device-sidebar .nformation {
+    max-width: initial !important;
+    z-index: initial !important;
+    position: initial !important;
+    box-shadow: none !important;
+    /*margin: 0 -17px;*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .leaflet-sidebar-right ~ .leaflet-control-container .leaflet-right {
+    right: 300px;
+    } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .leaflet-sidebar-right ~ .leaflet-control-container .leaflet-right {
+    right: 300px;
+    } }
+@media (min-width: 1200px) {
+  .leaflet-sidebar-right ~ .leaflet-control-container .leaflet-right {
+    right: 300px;
+    } }
+
+@media (min-width: 768px) {
+  .leaflet-sidebar-right.collapsed ~ .leaflet-control-container .leaflet-right {
+    right: 0px;
+    } }

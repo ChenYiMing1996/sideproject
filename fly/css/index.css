@@ -1,0 +1,192 @@
+body {
+    font-family: 'TaipeiSansTCBeta' ;
+}
+
+@font-face{
+    font-family:"TaipeiSansTCBeta";
+    src: url("fonts/TaipeiSansTCBeta-Regular.ttf"),
+         url("fonts/TaipeiSansTCBeta-Light.ttf"),
+         url("fonts/TaipeiSansTCBeta-Bold.ttf")
+}
+
+.text_S {
+    font-size: 14px;
+}
+.text_M {
+    font-size: 18px;
+}
+.text_L {
+    font-size: 24px;
+}
+.text_XL {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.header {
+    position:fixed;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.nav-toolbar {
+    float: right;
+}
+.nav-About, .nav-Case, .nav-Product, .nav-Info, .nav-Langue, .nav-Contact {
+    padding: 15px;
+    float: right;
+    font-size: 14px;
+    color: white;
+}
+.nav-Contact {
+    background-color: #1E4CC4;
+    border-radius: 999px;
+    text-align:center;
+    width: 120px;
+    height: 40px;
+}
+
+
+
+
+
+.slider_container, .Magento_container, .Whoscome_container, .IOT_container, .Service_container {
+    margin-bottom: 150px;
+    display: inline-block;
+    width: 100%;
+}
+
+.slider_container {
+    height: 860px;
+    background-color: grey;
+}
+
+.content_topic, .content_title, .content_text {
+    margin-bottom: 20px;
+}
+
+.content_topic {
+    color: #373C38;
+}
+
+.content_title {
+    color: #1E4CC4;
+}
+
+.content_text {
+    color: #373C38;
+}
+
+.Magento_container {
+    margin-bottom: 0;
+}
+
+.Whoscome_container {
+    margin-bottom: 150px;
+}
+.Whoscome_container .fluid {
+    float: right;
+}
+
+.IOT_container {
+    margin-bottom: 100px;
+}
+
+.Service_container {
+
+}
+
+.fluid{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.fluid_block {
+    max-width: 500px;
+}
+
+.fluid .fluid_img {
+    width: 47%;
+    overflow: hidden;
+}
+
+.fluid .fluid_content {
+    margin-top: 100px;
+    width: 50%;
+}
+
+
+.fluid_reverse {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.fluid_block_reverse {
+    margin-right: 100px;
+    max-width: 500px;
+    float: right
+}
+
+.fluid_block_reverse div,h1{
+    float: right
+}
+
+.fluid_reverse .fluid_img_reverse {
+    width: 47%;
+    overflow: hidden;
+}
+
+.fluid_reverse .fluid_content_reverse {
+    margin-top: 100px;
+    width: 50%;
+}
+
+
+.container {
+    margin-bottom: 200px;
+    min-width: 1200px;
+}
+
+
+
+.blog_image {
+    width: 300px;
+    height: auto;
+}
+
+
+.blog_image img {  
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+
+.footer {
+    height: 100px;
+}
+
+.footer .content {
+    display: flex;
+    flex-direction: row;
+}
+.footer .content .footer_row_1 {
+    width: 600px;
+}
+.footer .content .footer_row_2 {
+    width: 600px;
+}
+ul .footer_ul {
+    
+}

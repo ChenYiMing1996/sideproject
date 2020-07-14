@@ -1,0 +1,52 @@
+body { 
+    margin:0; 
+    padding:0; 
+}
+#map { 
+    position: absolute;
+    top:0; 
+    bottom:0; 
+    right:0; 
+    left:0;
+    z-index: 1;
+}
+
+#basemaps-day {
+    position: absolute;
+    bottom: 110px;
+    left: 10px;
+    z-index: 400;
+    background: white;
+    padding: 10px;
+    min-width: 120px;
+}
+#basemaps-group {
+    position: absolute;
+    left: 10px;
+    bottom: 200px;
+    z-index: 400;
+    background: white;
+    padding: 10px;
+    min-width: 120px;
+}
+#basemaps {
+    margin-bottom: 5px;
+} 
+/* .aa {
+    margin: 100px 20px 20px 20px;
+    width: 10%;
+    height: auto;
+    min-height: 20px;
+    min-width: 30px;
+    z-index: 1;
+    background-color: black;
+} */
+.leaflet-bottom.leaflet-left {
+    width: 100%;
+}
+.leaflet-control-container .leaflet-timeline-controls {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+}
